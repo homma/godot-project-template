@@ -1,4 +1,8 @@
 
+# load scene from a path and create instance
+static func load_scene(path):
+    return load(path).instantiate()
+
 # return a project setting value
 static func get_project_setting(path):
     return ProjectSettings.get_setting(path)
