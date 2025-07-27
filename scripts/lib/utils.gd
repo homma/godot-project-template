@@ -1,3 +1,12 @@
+
+# return a project setting value
+static func get_project_setting(path):
+    return ProjectSettings.get_setting(path)
+
+# create a node for a given class name
+static func create_node(name: StringName):
+    return ClassDB.instantiate(name)
+
 # create a scene from a node
 static func create_scene_from_node(root_node, scene_name):
     # PackedScene
