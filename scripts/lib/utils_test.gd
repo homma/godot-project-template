@@ -123,3 +123,35 @@ static func create_circle_sample():
     utils.add_child(root, circle2)
 
     return utils.create_scene_from_node(root, "sample circle")
+
+static func create_capsule_sample():
+
+    # root node
+    var root = utils.create_node("Node2D")
+    root.set_name("root")
+    root.show()
+
+    # capsule
+    var x1 = 0
+    var y1 = 0
+    var radius1 = 30
+    var height1 = 100
+    var color1 = Color.BLUE
+    var capsule1 = utils.create_capsule(x1, y1, radius1, height1, color1)
+
+    capsule1.set_name("capsule1")
+    utils.add_child(root, capsule1)
+
+    # capsule line
+    var x2 = 100
+    var y2 = 0
+    var radius2 = 30
+    var height2 = 100
+    var thickness = 3
+    var color2 = Color.GREEN
+    var capsule2 = utils.create_capsule_lines(x2, y2, radius2, height2, thickness, color2)
+
+    capsule2.set_name("capsule2")
+    utils.add_child(root, capsule2)
+
+    return utils.create_scene_from_node(root, "sample capsule")
