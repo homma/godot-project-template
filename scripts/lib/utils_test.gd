@@ -101,8 +101,8 @@ static func create_circle_sample():
     root.show()
 
     # circle
-    var x = 10
-    var y = 10
+    var x = 0
+    var y = 0
     var radius = 20
     var divide = 12
     var color1 = Color.BLUE
@@ -112,8 +112,8 @@ static func create_circle_sample():
     utils.add_child(root, circle1)
 
     # circle line
-    var x1 = 10
-    var y1 = 60
+    var x1 = 100
+    var y1 = 0
     var radius1 = 20
     var divide1 = 20
     var color2 = Color.GREEN
